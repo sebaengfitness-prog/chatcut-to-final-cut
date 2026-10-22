@@ -19,7 +19,7 @@ jobs:
       fail-fast: false
       matrix:
         # Exercise both native runtime slices without Rosetta or Final Cut Pro.
-        runner: [macos-14, macos-15-intel]
+        runner: [macos-15, macos-15-intel]
     runs-on: ${{ matrix.runner }}
     timeout-minutes: 20
     env:
@@ -49,14 +49,14 @@ jobs:
       - name: Run the built app's CLI on this runner
         run: ./scripts/test-cli.sh
       - name: Package universal app
-        if: matrix.runner == 'macos-14'
+        if: matrix.runner == 'macos-15'
         run: ./scripts/package.sh --skip-build
       - name: Verify package checksums
-        if: matrix.runner == 'macos-14'
+        if: matrix.runner == 'macos-15'
         working-directory: dist
         run: shasum -a 256 -c SHA256SUMS.txt
       - name: Retain unsigned test packages
-        if: matrix.runner == 'macos-14'
+        if: matrix.runner == 'macos-15'
         uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
         with:
           name: macos-universal-test-packages
