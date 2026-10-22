@@ -1,0 +1,69 @@
+name: macOS checks
+
+"on":
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test-and-build:
+    name: Tests and universal app (${{ matrix.runner }})
+    strategy:
+      fail-fast: false
+      matrix:
+        # Exercise both native runtime slices without Rosetta or Final Cut Pro.
+        runner: [macos-14, macos-15-intel]
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 20
+    env:
+      CHATCUT_EXPECT_NO_FCP: "1"
+    steps:
+      - name: Check out source
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          persist-credentials: false
+      - name: Enable shell scripts from source archives
+        run: chmod +x scripts/*.sh
+      - name: Converter regression tests
+        run: ./scripts/test-converter.sh
+      - name: Title and snapshot integration tests
+        run: ./scripts/test-titles.sh
+      - name: Build universal app
+        run: ./scripts/build.sh
+      - name: Verify universal slices and ad hoc signature
+        shell: bash
+        run: |
+          task_app='build/ChatCut to Final Cut.app'
+          task_binary="$task_app/Contents/MacOS/ChatCutToFinalCut"
+          for task_arch in arm64 x86_64; do
+            xcrun lipo "$task_binary" -verify_arch "$task_arch"
+          done
+          codesign --verify --strict --verbose=2 "$task_app"
+      - name: Run the built app's CLI on this runner
+        run: ./scripts/test-cli.sh
+      - name: Package universal app
+        if: matrix.runner == 'macos-14'
+        run: ./scripts/package.sh --skip-build
+      - name: Verify package checksums
+        if: matrix.runner == 'macos-14'
+        working-directory: dist
+        run: shasum -a 256 -c SHA256SUMS.txt
+      - name: Retain unsigned test packages
+        if: matrix.runner == 'macos-14'
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
+        with:
+          name: macos-universal-test-packages
+          path: |
+            dist/*.dmg
+            dist/*.zip
+            dist/SHA256SUMS.txt
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 14
