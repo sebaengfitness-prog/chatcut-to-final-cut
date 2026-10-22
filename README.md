@@ -6,7 +6,7 @@ Bring an edited ChatCut timeline into Final Cut Pro as editable clips, using you
 
 ## Install
 
-Requires **macOS 13 or later**. Version 1.1.0 includes Apple silicon and Intel code in one universal app. Apple silicon has been tested; Intel hardware has not yet been tested. Final Cut Pro is needed to import and finish the edit, but is **not required to convert XML**.
+Requires **macOS 13 or later**. Version 1.1.0 includes Apple silicon and Intel code in one universal app. Apple silicon app launch and conversion have been tested locally. Intel command-line conversion and integration tests passed on a separate GitHub-hosted Intel Mac; Intel GUI and Final Cut import remain untested. Final Cut Pro is needed to import and finish the edit, but is **not required to convert XML**.
 
 1. Open the [latest release](https://github.com/sebaengfitness-prog/chatcut-to-final-cut/releases/latest) and expand **Assets**.
 2. Download `ChatCut-to-Final-Cut-1.1.0-universal.dmg` or `ChatCut-to-Final-Cut-1.1.0-universal.zip`. GitHub's automatically generated **Source code** archives contain code to build, not the ready-to-run app.
