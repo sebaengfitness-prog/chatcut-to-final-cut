@@ -1,0 +1,616 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xmeml version="4">
+  <project>
+    <name>Synthetic Edit</name>
+    <children>
+      <sequence id="synthetic-sequence">
+        <name>Synthetic Edit</name>
+        <duration>240</duration>
+        <rate>
+          <timebase>24</timebase>
+          <ntsc>TRUE</ntsc>
+        </rate>
+        <media>
+          <video>
+            <format>
+              <samplecharacteristics>
+                <rate>
+                  <timebase>24</timebase>
+                  <ntsc>TRUE</ntsc>
+                </rate>
+                <width>3840</width>
+                <height>2160</height>
+                <anamorphic>FALSE</anamorphic>
+                <pixelaspectratio>square</pixelaspectratio>
+                <fielddominance>none</fielddominance>
+              </samplecharacteristics>
+            </format>
+            <track>
+              <clipitem id="vprimary1">
+                <name>Primary 01</name>
+                <file id="camera-a">
+                  <name>Camera A.mov</name>
+                  <pathurl>file://./Media/Camera%20A.mov</pathurl>
+                  <rate>
+                    <timebase>24</timebase>
+                    <ntsc>TRUE</ntsc>
+                  </rate>
+                  <duration>1200</duration>
+                  <media>
+                    <video>
+                      <samplecharacteristics>
+                        <rate>
+                          <timebase>24</timebase>
+                          <ntsc>TRUE</ntsc>
+                        </rate>
+                        <width>3840</width>
+                        <height>2160</height>
+                        <anamorphic>FALSE</anamorphic>
+                        <pixelaspectratio>square</pixelaspectratio>
+                        <fielddominance>none</fielddominance>
+                      </samplecharacteristics>
+                    </video>
+                    <audio>
+                      <channelcount>2</channelcount>
+                      <samplecharacteristics>
+                        <samplerate>48000</samplerate>
+                        <depth>16</depth>
+                      </samplecharacteristics>
+                    </audio>
+                  </media>
+                </file>
+                <rate>
+                  <timebase>24</timebase>
+                  <ntsc>TRUE</ntsc>
+                </rate>
+                <start>24</start>
+                <end>48</end>
+                <in>24</in>
+                <out>48</out>
+                <link>
+                  <linkclipref>aprimary1</linkclipref>
+                  <mediatype>audio</mediatype>
+                </link>
+              </clipitem>
+              <clipitem id="vprimary2">
+                <name>Primary 02</name>
+                <file id="camera-a" />
+                <rate>
+                  <timebase>24</timebase>
+                  <ntsc>TRUE</ntsc>
+                </rate>
+                <start>48</start>
+                <end>84</end>
+                <in>72</in>
+                <out>108</out>
+                <link>
+                  <linkclipref>aprimary2</linkclipref>
+                  <mediatype>audio</mediatype>
+                </link>
+              </clipitem>
+              <clipitem id="vprimary3">
+                <name>Primary 03</name>
+                <file id="camera-b">
+                  <name>Camera B.mov</name>
+                  <pathurl>file://./Media/Camera%20B.mov</pathurl>
+                  <rate>
+                    <timebase>24</timebase>
+                    <ntsc>TRUE</ntsc>
+                  </rate>
+                  <duration>1200</duration>
+                  <media>
+                    <video>
+                      <samplecharacteristics>
+                        <rate>
+                          <timebase>24</timebase>
+                          <ntsc>TRUE</ntsc>
+                        </rate>
+                        <width>3840</width>
+                        <height>2160</height>
+                        <anamorphic>FALSE</anamorphic>
+                        <pixelaspectratio>square</pixelaspectratio>
+                        <fielddominance>none</fielddominance>
+                      </samplecharacteristics>
+                    </video>
+                    <audio>
+                      <channelcount>2</channelcount>
+                      <samplecharacteristics>
+                        <samplerate>48000</samplerate>
+                        <depth>16</depth>
+                      </samplecharacteristics>
+                    </audio>
+                  </media>
+                </file>
+                <rate>
+                  <timebase>24</timebase>
+                  <ntsc>TRUE</ntsc>
+                </rate>
+                <start>120</start>
+                <end>144</end>
+                <in>36</in>
+                <out>60</out>
+                <link>
+                  <linkclipref>aprimary3</linkclipref>
+                  <mediatype>audio</mediatype>
+                </link>
+              </clipitem>
+              <clipitem id="vprimary4">
+                <name>Primary 04</name>
+                <file id="camera-b" />
+                <rate>
+                  <timebase>24</timebase>
+                  <ntsc>TRUE</ntsc>
+                </rate>
+                <start>144</start>
+                <end>168</end>
+                <in>96</in>
+                <out>120</out>
+                <link>
+                  <linkclipref>aprimary4</linkclipref>
+                  <mediatype>audio</mediatype>
+                </link>
+              </clipitem>
+              <clipitem id="vprimary5">
+                <name>Primary 05</name>
+                <file id="camera-a" />
+                <rate>
+                  <timebase>24</timebase>
+                  <ntsc>TRUE</ntsc>
+                </rate>
+                <start>192</start>
+                <end>216</end>
+                <in>144</in>
+                <out>168</out>
+                <link>
+                  <linkclipref>aprimary5</linkclipref>
+                  <mediatype>audio</mediatype>
+                </link>
+              </clipitem>
+              <clipitem id="vprimary6">
+                <name>Primary 06</name>
+                <file id="camera-b" />
+                <rate>
+                  <timebase>24</timebase>
+                  <ntsc>TRUE</ntsc>
+                </rate>
+                <start>216</start>
+                <end>240</end>
+                <in>180</in>
+                <out>204</out>
+                <link>
+                  <linkclipref>aprimary6</linkclipref>
+                  <mediatype>audio</mediatype>
+                </link>
+              </clipitem>
+            </track>
+            <track>
+              <clipitem id="vupper1">
+                <name>Upper 01</name>
+                <file id="camera-a" />
+                <rate>
+                  <timebase>24</timebase>
+                  <ntsc>TRUE</ntsc>
+                </rate>
+                <start>0</start>
+                <end>24</end>
+                <in>12</in>
+                <out>36</out>
+                <link>
+                  <linkclipref>aupper1</linkclipref>
+                  <mediatype>audio</mediatype>
+                </link>
+              </clipitem>
+              <clipitem id="vupper2">
+                <name>Upper 02</name>
+                <file id="camera-b" />
+                <rate>
+                  <timebase>24</timebase>
+                  <ntsc>TRUE</ntsc>
+                </rate>
+                <start>60</start>
+                <end>96</end>
+                <in>120</in>
+                <out>156</out>
+                <link>
+                  <linkclipref>aupper2</linkclipref>
+                  <mediatype>audio</mediatype>
+                </link>
+              </clipitem>
+              <clipitem id="vupper3">
+                <name>Upper 03</name>
+                <file id="camera-a" />
+                <rate>
+                  <timebase>24</timebase>
+                  <ntsc>TRUE</ntsc>
+                </rate>
+                <start>96</start>
+                <end>120</end>
+                <in>240</in>
+                <out>264</out>
+                <link>
+                  <linkclipref>aupper3</linkclipref>
+                  <mediatype>audio</mediatype>
+                </link>
+              </clipitem>
+              <clipitem id="vupper4">
+                <name>Upper 04</name>
+                <file id="camera-b" />
+                <rate>
+                  <timebase>24</timebase>
+                  <ntsc>TRUE</ntsc>
+                </rate>
+                <start>156</start>
+                <end>192</end>
+                <in>180</in>
+                <out>216</out>
+                <link>
+                  <linkclipref>aupper4</linkclipref>
+                  <mediatype>audio</mediatype>
+                </link>
+              </clipitem>
+            </track>
+          </video>
+          <audio>
+            <track>
+              <clipitem id="aprimary1">
+                <name>Primary sound 01</name>
+                <file id="camera-a" />
+                <rate>
+                  <timebase>24</timebase>
+                  <ntsc>TRUE</ntsc>
+                </rate>
+                <start>24</start>
+                <end>48</end>
+                <in>24</in>
+                <out>48</out>
+                <link>
+                  <linkclipref>vprimary1</linkclipref>
+                  <mediatype>video</mediatype>
+                </link>
+              </clipitem>
+              <clipitem id="aprimary2">
+                <name>Primary sound 02</name>
+                <file id="camera-a" />
+                <rate>
+                  <timebase>24</timebase>
+                  <ntsc>TRUE</ntsc>
+                </rate>
+                <start>48</start>
+                <end>84</end>
+                <in>72</in>
+                <out>108</out>
+                <link>
+                  <linkclipref>vprimary2</linkclipref>
+                  <mediatype>video</mediatype>
+                </link>
+              </clipitem>
+              <clipitem id="aprimary3">
+                <name>Primary sound 03</name>
+                <file id="camera-b" />
+                <rate>
+                  <timebase>24</timebase>
+                  <ntsc>TRUE</ntsc>
+                </rate>
+                <start>120</start>
+                <end>144</end>
+                <in>36</in>
+                <out>60</out>
+                <link>
+                  <linkclipref>vprimary3</linkclipref>
+                  <mediatype>video</mediatype>
+                </link>
+              </clipitem>
+              <clipitem id="aprimary4">
+                <name>Primary sound 04</name>
+                <file id="camera-b" />
+                <rate>
+                  <timebase>24</timebase>
+                  <ntsc>TRUE</ntsc>
+                </rate>
+                <start>144</start>
+                <end>168</end>
+                <in>96</in>
+                <out>120</out>
+                <link>
+                  <linkclipref>vprimary4</linkclipref>
+                  <mediatype>video</mediatype>
+                </link>
+              </clipitem>
+              <clipitem id="aprimary5">
+                <name>Primary sound 05</name>
+                <file id="camera-a" />
+                <rate>
+                  <timebase>24</timebase>
+                  <ntsc>TRUE</ntsc>
+                </rate>
+                <start>192</start>
+                <end>216</end>
+                <in>144</in>
+                <out>168</out>
+                <link>
+                  <linkclipref>vprimary5</linkclipref>
+                  <mediatype>video</mediatype>
+                </link>
+              </clipitem>
+              <clipitem id="aprimary6">
+                <name>Primary sound 06</name>
+                <file id="camera-b" />
+                <rate>
+                  <timebase>24</timebase>
+                  <ntsc>TRUE</ntsc>
+                </rate>
+                <start>216</start>
+                <end>240</end>
+                <in>180</in>
+                <out>204</out>
+                <link>
+                  <linkclipref>vprimary6</linkclipref>
+                  <mediatype>video</mediatype>
+                </link>
+              </clipitem>
+            </track>
+            <track>
+              <clipitem id="aupper1">
+                <name>Upper sound 01</name>
+                <file id="camera-a" />
+                <rate>
+                  <timebase>24</timebase>
+                  <ntsc>TRUE</ntsc>
+                </rate>
+                <start>0</start>
+                <end>24</end>
+                <in>12</in>
+                <out>36</out>
+                <link>
+                  <linkclipref>vupper1</linkclipref>
+                  <mediatype>video</mediatype>
+                </link>
+                <filter>
+                  <effect>
+                    <effectid>audiolevels</effectid>
+                    <parameter>
+                      <parameterid>level</parameterid>
+                      <value>0.8</value>
+                      <keyframe>
+                        <when>12</when>
+                        <value>0</value>
+                      </keyframe>
+                      <keyframe>
+                        <when>14</when>
+                        <value>0.8</value>
+                      </keyframe>
+                      <keyframe>
+                        <when>34</when>
+                        <value>0.8</value>
+                      </keyframe>
+                      <keyframe>
+                        <when>36</when>
+                        <value>0</value>
+                      </keyframe>
+                    </parameter>
+                  </effect>
+                </filter>
+              </clipitem>
+              <clipitem id="aupper2">
+                <name>Upper sound 02</name>
+                <file id="camera-b" />
+                <rate>
+                  <timebase>24</timebase>
+                  <ntsc>TRUE</ntsc>
+                </rate>
+                <start>60</start>
+                <end>96</end>
+                <in>120</in>
+                <out>156</out>
+                <link>
+                  <linkclipref>vupper2</linkclipref>
+                  <mediatype>video</mediatype>
+                </link>
+                <filter>
+                  <effect>
+                    <effectid>audiolevels</effectid>
+                    <parameter>
+                      <parameterid>level</parameterid>
+                      <value>0.8</value>
+                      <keyframe>
+                        <when>120</when>
+                        <value>0</value>
+                      </keyframe>
+                      <keyframe>
+                        <when>122</when>
+                        <value>0.8</value>
+                      </keyframe>
+                      <keyframe>
+                        <when>154</when>
+                        <value>0.8</value>
+                      </keyframe>
+                      <keyframe>
+                        <when>156</when>
+                        <value>0</value>
+                      </keyframe>
+                    </parameter>
+                  </effect>
+                </filter>
+              </clipitem>
+              <clipitem id="aupper3">
+                <name>Upper sound 03</name>
+                <file id="camera-a" />
+                <rate>
+                  <timebase>24</timebase>
+                  <ntsc>TRUE</ntsc>
+                </rate>
+                <start>96</start>
+                <end>120</end>
+                <in>240</in>
+                <out>264</out>
+                <link>
+                  <linkclipref>vupper3</linkclipref>
+                  <mediatype>video</mediatype>
+                </link>
+                <filter>
+                  <effect>
+                    <effectid>audiolevels</effectid>
+                    <parameter>
+                      <parameterid>level</parameterid>
+                      <value>0.8</value>
+                      <keyframe>
+                        <when>240</when>
+                        <value>0</value>
+                      </keyframe>
+                      <keyframe>
+                        <when>242</when>
+                        <value>0.8</value>
+                      </keyframe>
+                      <keyframe>
+                        <when>262</when>
+                        <value>0.8</value>
+                      </keyframe>
+                      <keyframe>
+                        <when>264</when>
+                        <value>0</value>
+                      </keyframe>
+                    </parameter>
+                  </effect>
+                </filter>
+              </clipitem>
+              <clipitem id="aupper4">
+                <name>Upper sound 04</name>
+                <file id="camera-b" />
+                <rate>
+                  <timebase>24</timebase>
+                  <ntsc>TRUE</ntsc>
+                </rate>
+                <start>156</start>
+                <end>192</end>
+                <in>180</in>
+                <out>216</out>
+                <link>
+                  <linkclipref>vupper4</linkclipref>
+                  <mediatype>video</mediatype>
+                </link>
+                <filter>
+                  <effect>
+                    <effectid>audiolevels</effectid>
+                    <parameter>
+                      <parameterid>level</parameterid>
+                      <value>0.8</value>
+                      <keyframe>
+                        <when>180</when>
+                        <value>0</value>
+                      </keyframe>
+                      <keyframe>
+                        <when>182</when>
+                        <value>0.8</value>
+                      </keyframe>
+                      <keyframe>
+                        <when>214</when>
+                        <value>0.8</value>
+                      </keyframe>
+                      <keyframe>
+                        <when>216</when>
+                        <value>0</value>
+                      </keyframe>
+                    </parameter>
+                  </effect>
+                </filter>
+              </clipitem>
+            </track>
+            <track>
+              <clipitem id="sound1">
+                <name>Sound effect 01</name>
+                <file id="sound">
+                  <name>Sound.wav</name>
+                  <pathurl>file://./Media/Sound.wav</pathurl>
+                  <rate>
+                    <timebase>24</timebase>
+                    <ntsc>TRUE</ntsc>
+                  </rate>
+                  <duration>240</duration>
+                  <media>
+                    <audio>
+                      <channelcount>1</channelcount>
+                      <samplecharacteristics>
+                        <samplerate>48000</samplerate>
+                        <depth>16</depth>
+                      </samplecharacteristics>
+                    </audio>
+                  </media>
+                </file>
+                <rate>
+                  <timebase>24</timebase>
+                  <ntsc>TRUE</ntsc>
+                </rate>
+                <start>8</start>
+                <end>20</end>
+                <in>0</in>
+                <out>12</out>
+                <filter>
+                  <effect>
+                    <effectid>audiolevels</effectid>
+                    <parameter>
+                      <parameterid>level</parameterid>
+                      <value>0.5</value>
+                      <keyframe>
+                        <when>0</when>
+                        <value>0</value>
+                      </keyframe>
+                      <keyframe>
+                        <when>2</when>
+                        <value>0.5</value>
+                      </keyframe>
+                      <keyframe>
+                        <when>10</when>
+                        <value>0.5</value>
+                      </keyframe>
+                      <keyframe>
+                        <when>12</when>
+                        <value>0</value>
+                      </keyframe>
+                    </parameter>
+                  </effect>
+                </filter>
+              </clipitem>
+              <clipitem id="sound2">
+                <name>Sound effect 02</name>
+                <file id="sound" />
+                <rate>
+                  <timebase>24</timebase>
+                  <ntsc>TRUE</ntsc>
+                </rate>
+                <start>170</start>
+                <end>182</end>
+                <in>24</in>
+                <out>36</out>
+                <filter>
+                  <effect>
+                    <effectid>audiolevels</effectid>
+                    <parameter>
+                      <parameterid>level</parameterid>
+                      <value>0.25</value>
+                      <keyframe>
+                        <when>24</when>
+                        <value>0</value>
+                      </keyframe>
+                      <keyframe>
+                        <when>26</when>
+                        <value>0.25</value>
+                      </keyframe>
+                      <keyframe>
+                        <when>34</when>
+                        <value>0.25</value>
+                      </keyframe>
+                      <keyframe>
+                        <when>36</when>
+                        <value>0</value>
+                      </keyframe>
+                    </parameter>
+                  </effect>
+                </filter>
+              </clipitem>
+            </track>
+          </audio>
+        </media>
+      </sequence>
+    </children>
+  </project>
+</xmeml>

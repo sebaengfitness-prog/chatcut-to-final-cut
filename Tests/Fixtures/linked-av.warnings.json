@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "sourceXMLSHA256": "caf0cb1da37280eacedb9d9ecd69dba881c9137012d7d115ff7c3bee90da89cb",
+  "messages": [
+    "Synthetic upstream export reports a 3 frame delta: XML 240 frames versus source 243 frames.",
+    "Synthetic upstream export omitted 2 audio crossfades; the missing transitions require review."
+  ],
+  "droppedItemTypes": {
+    "motion-graphic": 2,
+    "captions": 3
+  },
+  "droppedTransitions": 2,
+  "overlays": [
+    {
+      "assetName": "Intro graphic",
+      "text": "EXAMPLE PROJECT\nA test title",
+      "startFrame": 0,
+      "durationInFrames": 24
+    },
+    {
+      "assetName": "Speech caption",
+      "text": "A sample caption.",
+      "startFrame": 30,
+      "durationInFrames": 12
+    },
+    {
+      "assetName": "Exercise label",
+      "text": "SAMPLE EXERCISE\nExample label",
+      "startFrame": 72,
+      "durationInFrames": 24
+    },
+    {
+      "assetName": "Speech caption",
+      "text": "Unicode: Καλημέρα & <hello>",
+      "startFrame": 130,
+      "durationInFrames": 14
+    },
+    {
+      "assetName": "Speech caption",
+      "text": "Final sample caption",
+      "startFrame": 228,
+      "durationInFrames": 15
+    }
+  ]
+}
