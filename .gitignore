@@ -1,0 +1,15 @@
+build/
+dist/
+.DS_Store
+evidence/
+Tests/.build/
+# Local project exports, screenshots and research are not distributable fixtures.
+/Fixtures/
+/docs/screenshots/
+/docs/chatcut-handoff.md
+/docs/verification.md
+/docs/duplicate-clip-fix.md
+/docs/subtitle-face-fix.md
+/docs/sendtox-analysis.md
+*.fcpxmld/
+*.report.json
