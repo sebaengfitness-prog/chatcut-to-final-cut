@@ -2,7 +2,7 @@
 
 ## Platform
 
-Version 1.1.0 targets macOS 13 and later and includes **arm64** and **x86_64** in a universal app. Runtime testing has been on Apple silicon; Intel hardware is untested. The release is locally ad-hoc signed, with no Developer ID signature or Apple notarization.
+Version 1.1.0 targets macOS 13 and later and includes **arm64** and **x86_64** in a universal app. Apple silicon app launch and command-line conversion have been tested locally. On 22 October 2026, a separate GitHub-hosted Intel Mac passed 83 converter checks, 31 title checks, universal build/signature validation, and real command-line conversion. Intel GUI/Final Cut import and every supported macOS version have not been exhaustively tested. The release is locally ad-hoc signed, with no Developer ID signature or Apple notarization.
 
 Final Cut Pro is not required to create FCPXML. If the matching DTD is present in the standard Final Cut Pro or Final Cut Pro Trial installation under `/Applications`, the app validates against it using the local `xmllint` tool. Otherwise it reports that schema validation was unavailable. A successful parse or DTD check does not establish correct playback or full edit equivalence.
 
